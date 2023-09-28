@@ -20,16 +20,16 @@
 ---
 description: Initial processing
 tests:
-  #toolonglabel:
-  #  description: >-
-  #    DNS labels limited to 63 chars.
-  #  comment: >-
-  #    For initial processing, a long label results in None, not TempError
-  #  spec: 4.3/1
-  #  helo: mail.example.net
-  #  host: 1.2.3.5
-  #  mailfrom: lyme.eater@A123456789012345678901234567890123456789012345678901234567890123.example.com
-  #  result: none
+  toolonglabel:
+    description: >-
+      DNS labels limited to 63 chars.
+    comment: >-
+      For initial processing, a long label results in None, not TempError
+    spec: 4.3/1
+    helo: mail.example.net
+    host: 1.2.3.5
+    mailfrom: lyme.eater@A123456789012345678901234567890123456789012345678901234567890123.example.com
+    result: none
   longlabel:
     description: >-
       DNS labels limited to 63 chars.
@@ -38,12 +38,12 @@ tests:
     host: 1.2.3.5
     mailfrom: lyme.eater@A12345678901234567890123456789012345678901234567890123456789012.example.com
     result: fail
-  #emptylabel:
-  #  spec: 4.3/1
-  #  helo: mail.example.net
-  #  host: 1.2.3.5
-  #  mailfrom: lyme.eater@A...example.com
-  #  result: none
+  emptylabel:
+    spec: 4.3/1
+    helo: mail.example.net
+    host: 1.2.3.5
+    mailfrom: lyme.eater@A...example.com
+    result: none
   helo-not-fqdn:
     spec: 4.3/1
     helo: A2345678
