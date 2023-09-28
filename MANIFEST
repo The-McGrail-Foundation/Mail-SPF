@@ -58,5 +58,7 @@ t/90-author-pod-validation.t
 t/Mail-SPF-Test-lib.pm
 t/rfc4406-tests.yml
 t/rfc4408-tests.yml
+t/10.02-rfc7208.t
+t/rfc7208-tests.yml
 TODO
 SIGNATURE    Added here by Module::Build

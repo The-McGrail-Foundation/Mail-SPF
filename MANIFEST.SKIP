@@ -10,8 +10,11 @@
 ^\.
 /\.
 \.bak$
+\.git$
+\.gitignore$
 \.old$
 \.swp$
 \.tar\.gz$
 ~$
+^MYMETA.json$
 ^MYMETA.yml$
