@@ -1,7 +1,7 @@
-Mail::SPF 2.009 -- A Perl implementation of the Sender Policy Framework
-(C) 2005-2013 Julian Mehnle <julian@mehnle.net>
-    2005      Shevek <cpan@anarres.org>
-<http://search.cpan.org/dist/Mail-SPF>
+Mail::SPF 2.009 -- A Perl implementation of the Sender Policy Framework  
+(C) 2005-2013 Julian Mehnle <julian@mehnle.net>  
+    2005      Shevek <cpan@anarres.org>  
+<https://metacpan.org/dist/Mail-SPF>  
 ==============================================================================
 
 Mail::SPF is an object-oriented Perl implementation of the Sender Policy
@@ -65,6 +65,3 @@ License
 
 Mail::SPF is free software.  You may use, modify, and distribute it under the
 terms of the BSD license.  See LICENSE for the BSD license text.
-
-# $Id: README 61 2013-07-22 03:45:15Z julian $
-# vim:tw=79
