@@ -450,13 +450,13 @@ tests:
     host: 1.2.3.5
     mailfrom: foo@t6.example.com
     result: fail
-  #default-result:
-  #  description: Default result is neutral.
-  #  spec: 4.7/1
-  #  helo: mail.example.com
-  #  host: 1.2.3.5
-  #  mailfrom: foo@t7.example.com
-  #  result: neutral
+  default-result:
+    description: Default result is neutral.
+    spec: 4.7/1
+    helo: mail.example.com
+    host: 1.2.3.5
+    mailfrom: foo@t7.example.com
+    result: neutral
   redirect-is-modifier:
     description: |-
       Invalid mechanism.  Redirect is a modifier.
