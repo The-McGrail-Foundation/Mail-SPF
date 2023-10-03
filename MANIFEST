@@ -54,11 +54,11 @@ t/00.05-class-macrostring.t
 t/00.99-class-misc.t
 t/10.00-rfc4408.t
 t/10.01-rfc4406.t
+t/10.02-rfc7208.t
 t/90-author-pod-validation.t
 t/Mail-SPF-Test-lib.pm
 t/rfc4406-tests.yml
 t/rfc4408-tests.yml
-t/10.02-rfc7208.t
 t/rfc7208-tests.yml
 TODO
 SIGNATURE    Added here by Module::Build
