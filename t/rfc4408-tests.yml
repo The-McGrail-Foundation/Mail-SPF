@@ -360,21 +360,21 @@ tests:
     host: 1.2.3.4
     mailfrom: foo@t9.example.com
     result: permerror
-  #invalid-domain-empty-label:
-  #  description: >-
-  #    target-name that is a valid domain-spec per RFC 4408 but an invalid
-  #    domain name per RFC 1035 (empty label) must be treated as non-existent.
-  #  comment: >-
-  #    An empty domain label, i.e. two successive dots, in a mechanism
-  #    target-name is valid domain-spec syntax, even though a DNS query cannot
-  #    be composed from it.  The spec being unclear about it, this could either
-  #    be considered a syntax error, or, by analogy to 4.3/1 and 5/10/3, the
-  #    mechanism chould be treated as a no-match.
-  #  spec: [4.3/1, 5/10/3]
-  #  helo: mail.example.com
-  #  host: 1.2.3.4
-  #  mailfrom: foo@t10.example.com
-  #  result: [permerror, fail]
+  invalid-domain-empty-label:
+    description: >-
+      target-name that is a valid domain-spec per RFC 4408 but an invalid
+      domain name per RFC 1035 (empty label) must be treated as non-existent.
+    comment: >-
+      An empty domain label, i.e. two successive dots, in a mechanism
+      target-name is valid domain-spec syntax, even though a DNS query cannot
+      be composed from it.  The spec being unclear about it, this could either
+      be considered a syntax error, or, by analogy to 4.3/1 and 5/10/3, the
+      mechanism chould be treated as a no-match.
+    spec: [4.3/1, 5/10/3]
+    helo: mail.example.com
+    host: 1.2.3.4
+    mailfrom: foo@t10.example.com
+    result: [permerror, fail]
   invalid-domain-long:
     description: >-
       target-name that is a valid domain-spec per RFC 4408 but an invalid
