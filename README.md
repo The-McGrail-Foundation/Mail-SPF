@@ -58,7 +58,7 @@ Reporting Bugs
 --------------
 
 Please report bugs in Mail::SPF and its documentation to the CPAN bug tracker:
-<http://rt.cpan.org/Public/Dist/Display.html?Name=Mail-SPF>
+<https://github.com/The-McGrail-Foundation/Mail-SPF/issues>
 
 License
 -------
