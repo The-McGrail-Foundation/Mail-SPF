@@ -46,6 +46,12 @@ my $build = $class->new(
         'Shevek <cpan@anarres.org>'
     ],
     license             => 'bsd',
+    meta_merge	=> {
+	resources => {
+            repository => 'https://github.com/The-McGrail-Foundation/Mail-SPF',
+            bugtracker => 'https://github.com/The-McGrail-Foundation/Mail-SPF/issues'
+        },
+    },
     requires            => {
         # Core requirements:
         perl                => '5.006',

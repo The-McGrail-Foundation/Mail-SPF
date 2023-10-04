@@ -12,8 +12,8 @@ configure_requires:
 generated_by: 'Module::Build version 0.3607'
 license: bsd
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  url: https://metacpan.org/pod/CPAN::Meta::Spec
+  version: 2
 name: Mail-SPF
 provides:
   Mail::SPF:
