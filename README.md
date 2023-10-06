@@ -1,4 +1,6 @@
-Mail::SPF 2.009 -- A Perl implementation of the Sender Policy Framework  
+[![CI for Mail-SPF](https://github.com/The-McGrail-Foundation/Mail-SPF/actions/workflows/main.yml/badge.svg)](https://github.com/The-McGrail-Foundation/Mail-SPF/actions/workflows/main.yml) [![GitHub release](https://img.shields.io/github/release/The-McGrail-Foundation/Mail-SPF.svg)](https://GitHub.com/The-McGrail-Foundation/Mail-SPF/releases/)
+
+Mail::SPF -- A Perl implementation of the Sender Policy Framework  
 ==============================================================================
 
 Mail::SPF is an object-oriented Perl implementation of the Sender Policy
