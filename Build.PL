@@ -7,7 +7,9 @@
 ##############################################################################
 
 use Module::Build 0.26;
+use Config;
 use version;
+use warnings;
 
 my $class = Module::Build->subclass( code => <<'EOF' );
 
@@ -79,7 +81,7 @@ my $build = $class->new(
         'bin/spfquery'
     ],
     install_path        => {
-        'sbin'              => '/usr/sbin'
+        'sbin'              => "$Config{installprefix}/sbin"
     },
     create_makefile_pl  => 'passthrough',
     sign                => 1
