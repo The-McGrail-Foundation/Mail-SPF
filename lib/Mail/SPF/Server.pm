@@ -190,7 +190,7 @@ option.  See there for additional information and security notes.
 
 An I<integer> denoting the maximum number of "void" DNS look-ups per SPF check,
 i.e. the number of DNS look-ups that were caused by DNS-interactive terms and
-macros (as defined in RFC 4408, 10.1, paragraphs 6 and 7) and that are allowed
+macros (as defined in RFC 7208, 11.1, paragraph 4) and that are allowed
 to return an empty answer with RCODE 0 or RCODE 3 (C<NXDOMAIN>) before
 processing is aborted with a C<permerror> result.  If B<undef> is specified,
 there is no stricter limit on the number of void DNS look-ups beyond the usual
