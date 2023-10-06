@@ -1,7 +1,4 @@
 Mail::SPF 2.009 -- A Perl implementation of the Sender Policy Framework  
-(C) 2005-2013 Julian Mehnle <julian@mehnle.net>  
-    2005      Shevek <cpan@anarres.org>  
-<https://metacpan.org/dist/Mail-SPF>  
 ==============================================================================
 
 Mail::SPF is an object-oriented Perl implementation of the Sender Policy
@@ -53,6 +50,11 @@ overriding Mail::SPF::Result's result_classes() constant.
 For this to work, any code throwing Mail::SPF::Result(::*) objects directly
 needs to stop doing so as of Mail::SPF 2.006 and use Mail::SPF::Server::
 throw_result() instead.
+
+Authors
+--------------
+(C) 2005-2013 Julian Mehnle <julian@mehnle.net>  
+    2005      Shevek <cpan@anarres.org>  
 
 Reporting Bugs
 --------------
