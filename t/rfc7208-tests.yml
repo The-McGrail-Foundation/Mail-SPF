@@ -2614,16 +2614,16 @@ tests:
     mailfrom: test@example.org
     result: pass
     strict: 2
-  #cname-aliasing:
-  #  description: >-
-  #    referencing the same TXT record through multiple CNAME aliases
-  #  comment: >-
-  #    Pyspf incorrectly reports multiple SPF records
-  #  spec: 3.2/1
-  #  helo: mail.example.org
-  #  host: 192.0.2.27
-  #  mailfrom: test@mail.example.org
-  #  result: fail
+  cname-aliasing:
+    description: >-
+      referencing the same TXT record through multiple CNAME aliases
+    comment: >-
+      Pyspf incorrectly reports multiple SPF records
+    spec: 3.2/1
+    helo: mail.example.org
+    host: 192.0.2.27
+    mailfrom: test@mail.example.org
+    result: fail
 zonedata:
   example.org:
     - SPF: "v=spf1 mx redirect=_spf.example.com"
