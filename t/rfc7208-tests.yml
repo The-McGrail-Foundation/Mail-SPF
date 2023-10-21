@@ -1606,29 +1606,29 @@ tests:
     host: 1.2.3.4
     mailfrom: foo@e1.example.com
     result: permerror
-  #cidr6-0-ip4:
-  #  description: >-
-  #    IP4 connections do not match ip6.
-  #  comment: >-
-  #    There was controversy over IPv4 mapped connections.  RFC7208 clearly
-  #    states IPv4 mapped addresses only match ip4: mechanisms.
-  #  spec: 5/9/2
-  #  helo: mail.example.com
-  #  host: 1.2.3.4
-  #  mailfrom: foo@e2.example.com
-  #  result: neutral
-  #cidr6-ip4:
-  #  description: >-
-  #    Even if the SMTP connection is via IPv6, an IPv4-mapped IPv6 IP address
-  #    (see RFC 3513, Section 2.5.5) MUST still be considered an IPv4 address.
-  #  comment: >-
-  #    There was controversy over ip4 mapped connections.  RFC7208 clearly
-  #    requires such connections to be considered as ip4 only.
-  #  spec: 5/9/2
-  #  helo: mail.example.com
-  #  host: ::FFFF:1.2.3.4
-  #  mailfrom: foo@e2.example.com
-  #  result: neutral
+  cidr6-0-ip4:
+    description: >-
+      IP4 connections do not match ip6.
+    comment: >-
+      There was controversy over IPv4 mapped connections.  RFC7208 clearly
+      states IPv4 mapped addresses only match ip4: mechanisms.
+    spec: 5/9/2
+    helo: mail.example.com
+    host: 1.2.3.4
+    mailfrom: foo@e2.example.com
+    result: neutral
+  cidr6-ip4:
+    description: >-
+      Even if the SMTP connection is via IPv6, an IPv4-mapped IPv6 IP address
+      (see RFC 3513, Section 2.5.5) MUST still be considered an IPv4 address.
+    comment: >-
+      There was controversy over ip4 mapped connections.  RFC7208 clearly
+      requires such connections to be considered as ip4 only.
+    spec: 5/9/2
+    helo: mail.example.com
+    host: ::FFFF:1.2.3.4
+    mailfrom: foo@e2.example.com
+    result: neutral
   cidr6-0:
     description: >-
       Match any IP6
