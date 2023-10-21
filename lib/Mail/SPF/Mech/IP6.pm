@@ -4,6 +4,7 @@
 #
 # (C) 2005-2012 Julian Mehnle <julian@mehnle.net>
 #     2005      Shevek <cpan@anarres.org>
+#     2023      Giovanni Bechis <giovanni@paclan.it>
 # $Id: IP6.pm 57 2012-01-30 08:15:31Z julian $
 #
 ##############################################################################
