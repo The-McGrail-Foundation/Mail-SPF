@@ -326,6 +326,10 @@ sub process {
     }
     catch Mail::SPF::Result with {
         $result = shift;
+        # SPF explanation text is restricted to 7-bit ascii
+        if(defined $request->{state}->{authority_explanation} and utf8::is_utf8($request->{state}->{authority_explanation}->{text})) {
+          $request->{state}->{authority_explanation}->{text} = $self->{default_authority_explanation};
+        }
     }
     catch Mail::SPF::EDNSError with {
         $result = $self->result_class('temperror')->new($self, $request, shift->text);

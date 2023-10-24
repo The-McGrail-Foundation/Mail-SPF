@@ -1948,17 +1948,17 @@ tests:
     host: 1.2.3.4
     mailfrom: foo@e20.example.com
     result: neutral
-  #non-ascii-exp:
-  #  description: >-
-  #    SPF explanation text is restricted to 7-bit ascii.
-  #  comment: >-
-  #    Checking a possibly different code path for non-ascii chars.
-  #  spec: 6.2/5
-  #  helo: hosed
-  #  host: 1.2.3.4
-  #  mailfrom: "foobar@nonascii.example.com"
-  #  result: fail
-  #  explanation: DEFAULT
+  non-ascii-exp:
+    description: >-
+      SPF explanation text is restricted to 7-bit ascii.
+    comment: >-
+      Checking a possibly different code path for non-ascii chars.
+    spec: 6.2/5
+    helo: hosed
+    host: 1.2.3.4
+    mailfrom: "foobar@nonascii.example.com"
+    result: fail
+    explanation: DEFAULT
   two-exp-records:
     description: >-
       Must ignore exp= if DNS returns more than one TXT record.
