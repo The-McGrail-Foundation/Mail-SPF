@@ -331,7 +331,17 @@ sub process {
         $result = $self->result_class('temperror')->new($self, $request, shift->text);
     }
     catch Mail::SPF::ENoAcceptableRecord with {
-        if((not defined $request->{record}->{terms}[0]->{domain_spec}->{text}) or ($request->{record}->{terms}[0]->{domain_spec}->{text} !~ /\.\./)) {
+        my $wrongdom = 0;
+        if(defined $request->{record}->{terms}) {
+          my @domains = @{$request->{record}->{terms}};
+          foreach my $dom ( @domains ) {
+            if((defined $dom->{domain_spec}->{text}) and ($dom->{domain_spec}->{text} =~ /\.\./)) {
+              $wrongdom = 1;
+              last;
+            }
+          }
+        }
+        if(not $wrongdom) {
           $result = $self->result_class('none'     )->new($self, $request, shift->text);
         } else {
           $result = $self->result_class('permerror')->new($self, $request, shift->text);
